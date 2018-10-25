@@ -10,9 +10,7 @@ Welcome to template-doc's documentation!
   :maxdepth: 2
   :caption: Contents:
 
-  project-1/readme.md
   project-1/readme2.rst
-  project-2/readme.md
 
 Indices and tables
 ==================

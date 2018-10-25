@@ -16,9 +16,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import recommonmark
-from recommonmark.parser import CommonMarkParser
-from recommonmark.transform import AutoStructify
+#import recommonmark
+#from recommonmark.parser import CommonMarkParser
+#from recommonmark.transform import AutoStructify
 
 # -- Project information -----------------------------------------------------
 
@@ -48,7 +48,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'recommonmark',
+    #'recommonmark',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -57,10 +57,11 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
+#source_parsers = {
+#    '.md': CommonMarkParser,
+#}
 
 # The master toctree document.
 master_doc = 'index'
@@ -201,10 +202,10 @@ todo_include_todos = True
 
 # app setup hook
 # app setup hook
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-        'auto_toc_tree_section': 'Contents',
-        'enable_eval_rst': True,
-        'enable_auto_doc_ref': True
-    }, True)
-    app.add_transform(AutoStructify)
+#  def setup(app):
+    #  app.add_config_value('recommonmark_config', {
+        #  'auto_toc_tree_section': 'Contents',
+        #  'enable_eval_rst': True,
+        #  'enable_auto_doc_ref': True
+    #  }, True)
+    #  app.add_transform(AutoStructify)
